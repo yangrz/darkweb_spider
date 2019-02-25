@@ -80,7 +80,7 @@ class DarkwebSpiderDownloaderMiddleware(object):
         # Called for each request that goes through the downloader
         # middleware.
         #spider.logger.info("DarkWebSpiderMiddleware process_request:requests=%s,spider=%s", request, spider)
-        request.meta['proxy'] = 'http://103.76.85.107:8118'
+        request.meta['proxy'] = 'http://xxx.xxx.xxx.xxx:8118'
         #spider.logger.info('request.meta%s', request.meta)
         # Must either:
         # - return None: continue processing this request
