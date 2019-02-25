@@ -14,8 +14,8 @@ login_form = 'http://deepmix2z2ayzi46.onion/ucp.php?mode=login&sid='
 
 def get_session():
     session = requests.session()
-    session.proxies['http'] = '103.76.85.107:8118'
-    session.proxies['https'] = '103.76.85.107:8118'
+    session.proxies['http'] = 'xxx.xxx.xxx.xxx:8118'
+    session.proxies['https'] = 'xxx.xxx.xxx.xxx:8118'
     return session
 
 def get_CookieSid(username, passwd):
@@ -72,7 +72,7 @@ def get_value():
     Accounts = settings['ACCOUNTS']
     for accounts in Accounts:
         print(accounts)
-        cookie,sid = get_CookieSid(accounts , 'Testtest123')
+        cookie,sid = get_CookieSid(accounts , 'xxxxxxxx')
         __i__= {'cookie':cookie,'sid':sid}
         print(__i__)
         __value__.append(__i__)
